@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/ghCriatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome completo da criatura"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingTop="30dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"/>
+
+    <Button
+        android:id="@+id/btnGetCriatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:onClick="getImageNome"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iCriatura"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        android:contentDescription="Imagem da criatura" />
+
+    <TextView
+        android:id="@+id/tvNomeCriatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
